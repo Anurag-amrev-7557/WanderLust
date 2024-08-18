@@ -1,0 +1,74 @@
+<% layout("/layouts/boilerplate") -%>
+
+<div class="filters" style="margin-top: 1rem !important;">
+    <div class="filter">
+        <img src="/resources/icon.webp">
+        <span>Icons</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/farms.jpg">
+        <span>Farms</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/Amazingviews.jpg">
+        <span>Views</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/treehouses.jpg">
+        <span>Treehouses</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/golfing.jpg">
+        <span>Golfing</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/windmills.jpg">
+        <span>Windmills</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/amazingpools.jpg">
+        <span>Pools</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/omg.jpg">
+        <span>OMG!</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/beach.jpg">
+        <span>Beach</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/cabins.jpg">
+        <span>Cabins</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/luxe.jpg">
+        <span>Luxe</span>
+    </div>
+    <div class="filter">
+        <img src="/resources/rooms.jpg">
+        <span>Rooms</span>
+    </div>
+</div>
+
+
+<br>
+<div class="row">
+    <% for(let listing of allListings) { %>
+        <a href="/listings/<%= listing._id %>" class="listing-link">
+           <div class="card col-10 listing-card" style="width: 25rem">
+                <div class="card text-white">
+                    <img class="card-img-top" src="<%= listing.image.url %>" alt="Card image cap">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div>
+                <div class="card-body">
+                    <h5 class="card-text"><%= listing.title %></h5>
+                    <p class="card-text" style="color: #222"><%= listing.description %></p>
+                    <h6 class="card-text">&#8377; <%= listing.price.toLocaleString("en-IN") %> / night</h6>
+                </div>
+            </div> 
+        </a>
+    <% } %>
+</div>
+

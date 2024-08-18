@@ -1,0 +1,193 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    height: 5rem !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.container {
+    flex: 1;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #222 !important;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 8rem !important;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info-socials {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.listing-link {
+    width: 23rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 18rem !important;
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    transition: all 0.3s ease;
+}
+
+.card-body {
+    margin-top: 1rem !important;
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400;
+}
+
+.card-text{
+    color: #222 !important
+}
+
+.row a {
+    text-decoration: none !important;
+}
+
+.card-img-overlay {
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+}
+
+.card:hover  {
+    transform: scale(1.01);
+}
+
+.btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    border-radius: 0.4rem !important;
+    width: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+}
+.show-img {
+    height: 30vh !important;
+    transition: all 0.3s ease;
+}
+
+.form-check {
+    display: inline-block !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input, textarea {
+    border-radius: 0.4rem !important; 
+    border: 1px solid rgba(0,0,0,1) !important;
+    height: 3rem !important;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+}
+
+textarea {
+    height: 4rem !important;
+}
+
+.reviewcard {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+    border-bottom: 1px solid rgba(0,0,0, 0.5);
+}
+
+.bi {
+    font-size: 1.2rem !important;
+}
+
+i {
+    transition: all 0.3s ease;
+}
+
+.filters {
+    display: flex;
+    height: 4.875rem !important;
+    justify-content: space-between;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 3.5rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter img {
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.6;
+}
+
+.filter:hover img {
+    opacity: 1;
+}
+
+.filter:hover span {
+    font-weight: 600;
+}
+
+.d-flex {
+    transform: scale(0.8);
+}
+
+.search {
+    border-radius: 2rem !important;
+    width: 20rem !important
+}
+
+.searchbtn {
+    border-radius: 50% !important;
+    width: 3rem !important;
+}
